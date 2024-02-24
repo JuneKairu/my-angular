@@ -1,3 +1,27 @@
-<main>
-  <app-to-do />
-</main>
+<section class="cont bg-violet-900 p-2 min-h-screen flex flex-col items-center justify-center">
+  <div class="content flex items-center flex-col mb-4 mt-10">
+    <img src="/assets/imgs/kek.jpg" alt="me" class="w-24 h-24 rounded-full mb-4">
+    <div class="mb-4 text-center text-white">
+      <h3 class="text-lg font-semibold">My Portfolio</h3>
+      <h1 class="text-2xl font-bold mb-2">Julianne Kyle Demafilez</h1>
+      <h5 class="text-sm font-light mb-2">Illustrator</h5>
+    </div>
+  </div>
+
+  <div class="acc -mt-8 flex gap-2">
+    <img src="assets/imgs/fb.png" alt="facebook" class="w-6 h-6">
+    <img src="assets/imgs/ig.png" alt="instagram" class="w-6 h-6">
+    <img src="assets/imgs/youtube.png" alt="youtube" class="w-6 h-6">
+    <img src="assets/imgs/discord.jpg" alt="discord" class="w-6 h-6">
+    <img src="assets/imgs/twitter.png" alt="twitter" class="w-6 h-6">
+  </div>
+
+  <div class="mt-4 flex gap-4">
+    <button routerLink="/profile" class="bg-purple-500 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full border border-purple-500">Profile</button>
+    <button routerLink="/skills" class="bg-purple-500 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full border border-purple-500">Skills</button>
+    <button routerLink="/works" class="bg-purple-500 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded-full border border-purple-500">Works</button>
+  </div>
+
+  <router-outlet></router-outlet>
+  
+</section>
