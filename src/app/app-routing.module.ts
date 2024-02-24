@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ToDoComponent } from './to-do/to-do.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:"to-do" , component:ToDoComponent}
+  {path:"home" , component:HomeComponent}
 ];
 
 @NgModule({
