@@ -1,19 +1,17 @@
 <div class="container mx-auto my-8">
-    <h1 class="text-3xl font-bold mb-4">Todo App</h1>
-  
+    <h1 class="text-3xl text-white font-bold mb-4">Task-to-Do</h1>
     <form>
       <div class="flex">
         <input
           type="text"
           class="p-2 border rounded-l w-full"
-          placeholder="Add a new task..."
+          placeholder="Create New Task"
         />
-        <button type="submit" class="bg-blue-500 text-white p-2 rounded-r">
-          Add
-        </button>
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 transition-all">
+              <span class="mr-2">Add</span>
+          </button>
       </div>
     </form>
-
     <ul class="mt-4">
         <li *ngFor="let todo of todos" class="flex items-center justify-between p-2 border-b">
           <span>{{ todo.task }}</span>
