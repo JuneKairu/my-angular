@@ -1,8 +1,14 @@
-<div>
-    <label for="todoItem"> </label>
-    <input type="text" name="id" />
+<div class="flex space-x-4">
+    <div class="w-9/12 h-9/12 border-2 border-black bg-purple-700 flex flex-col text-center p-4">
+        <label for="todoItem" class="font-bold text-xl text-white"> ToDo List </label>
+        <input type="text" name="todoItem" id="todoItem" [formControl]="todoItem" class="mt-2" />
+        <button (click)="pushItemToList()" 
+            class="bg-fuchsia-700 mt-3 text-white font-bold text-x1 border-2 border-black"> Add </button>
+    </div>
 
-    1. Eat breakfast, feed the dog
-    2. Do Laundry, include bedsheets
-    3. Finish major tasks, study as sideline
+        <ol class="bg-purple-950 border-2 border-purple-500 text-white">
+            @for (item of todoList; track item) {
+                <li> {{item}} </li>
+            }
+        </ol>
 </div>
