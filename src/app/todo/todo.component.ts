@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-todo',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './todo.component.css'
 })
 export class TodoComponent {
+  todoItem = new FormControl("");
 
+  todoList: string[] = []
+
+    pushItemToList() {
+      this.todoList.push(this.todoItem.value as string)
+      this.todoItem.setValue("")
+    }
 }

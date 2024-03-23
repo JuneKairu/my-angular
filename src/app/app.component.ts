@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { TodoComponent } from './todo/todo.component';
 
-@Component({
+@Component({ 
   selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, TodoComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'angular-test';
-}
+
+export class AppComponent { title = 'angular-test';}
